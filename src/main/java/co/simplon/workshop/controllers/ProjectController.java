@@ -24,4 +24,10 @@ public class ProjectController {
 	List<String> getAll() {
 		return service.getAll();
 	}
+	
+	@GetMapping("/ping")
+	@ResponseStatus(HttpStatus.OK)
+	Boolean ping() {
+		return true;
+	}
 }
